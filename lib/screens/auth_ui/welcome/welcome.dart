@@ -27,10 +27,11 @@ class Welcome extends StatelessWidget {
                 child: Center(
                   child: Image.asset(
                     AssetsImages.intance.welcomeImages,
+                    scale: 0.4,
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -39,7 +40,7 @@ class Welcome extends StatelessWidget {
                     padding: EdgeInsets.zero,
                     child: const Icon(
                       Icons.facebook,
-                      size: 40,
+                      size: 50,
                       color: Colors.blue,
                     ),
                   ),
@@ -49,12 +50,12 @@ class Welcome extends StatelessWidget {
                     padding: EdgeInsets.zero,
                     child: Image.asset(
                       AssetsImages.intance.googleLogo,
-                      scale: 60,
+                      scale: 50,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 90),
               PrimaryButton(
                 title: 'Login',
                 onPressed: () {
